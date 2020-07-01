@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color_list"
+    tools:context=".activity.FormProjectActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@color/whiteCardColor"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:theme="@style/AppTheme.AppBarOverlay" />
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:id="@+id/linear_name"
+        android:background="@color/whiteCardColor"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_gravity="center"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="3dp"
+            android:elevation="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/button_chatbox_file"
+                android:gravity="center"
+                android:clickable="true"
+                android:src="@drawable/add_group"
+                android:onClick="chooseImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:focusable="true"
+                android:contentDescription="@string/button_chatbox_file" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edittextlayoutname"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="text">
+
+            <AutoCompleteTextView
+                android:hint="@string/project_name"
+                android:id="@+id/edittext_name"
+                android:textSize="17sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName|textImeMultiLine"
+                android:imeOptions="actionDone"
+                android:scrollHorizontally="false"
+                android:verticalScrollbarPosition="right"
+                android:dropDownHeight="fill_parent"
+                android:dropDownWidth="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <TextView
+        android:paddingStart="8dp"
+        android:id="@+id/guide_avatar"
+        android:text="@string/write_your_name_project_here"
+        app:layout_constraintTop_toBottomOf="@+id/linear_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlSymmetry" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/edittextlayoutdesc"
+        android:background="@color/whiteCardColor"
+        app:layout_constraintTop_toBottomOf="@+id/guide_avatar"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="8dp"
+        android:maxLines="5"
+        android:inputType="text"
+        android:layout_marginTop="5dp">
+        <AutoCompleteTextView
+            android:hint="@string/project_desc"
+            android:id="@+id/edittext_desc"
+            android:singleLine="false"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textLongMessage|textImeMultiLine"
+            android:imeOptions="actionDone"
+            android:scrollHorizontally="false"
+            android:verticalScrollbarPosition="right"
+            android:dropDownHeight="fill_parent"
+            android:dropDownWidth="match_parent"
+            android:maxLines="5"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onFinishAction"
+        app:backgroundTint="@color/profilePrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icons8_checked_32"
+        tools:ignore="RtlHardcoded" />
+
+    <include layout="@layout/bg_progress_view"/>
+
+</android.support.constraint.ConstraintLayout>

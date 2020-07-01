@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_file"
+        android:title="@string/show_all_file" />
+
+    <item
+        android:id="@+id/navigation_member"
+        android:title="@string/show_all_member" />
+
+    <item
+        android:id="@+id/navigation_invite"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_add_24dp"
+        android:title="@string/invite_member" />
+
+</menu>

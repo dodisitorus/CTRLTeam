@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:tools="http://schemas.android.com/tools"
+    app:layout_constraintTop_toBottomOf="@+id/title_menu"
+    android:background="@color/primaryTextColor"
+    android:id="@+id/horizontal_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/list_menu"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/LLMenuAttendance"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:src="@drawable/icons8_attendance_80"
+                    android:contentDescription="@string/todo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:background="@color/profilePrimaryDark"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="1dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/whiteCardColor"
+                android:text="@string/absent_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLMenuSchedule"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:contentDescription="@string/todo"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_schedule"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/profilePrimaryDark"
+                android:textColor="@color/whiteCardColor"
+                android:text="@string/schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLMenuFiles"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:src="@drawable/files"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/todo" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:textStyle="bold"
+                android:background="@color/profilePrimaryDark"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="1dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/whiteCardColor"
+                android:text="@string/files"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+    </LinearLayout>
+</HorizontalScrollView>

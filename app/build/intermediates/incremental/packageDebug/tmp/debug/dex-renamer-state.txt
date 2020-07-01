@@ -1,0 +1,7 @@
+#Sat Feb 29 22:02:29 WIB 2020
+base.0=/Users/MacBook/Documents/AndroidPersonal/CTRLTeam/app/build/intermediates/transforms/dexMerger/debug/0
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/Users/MacBook/Documents/AndroidPersonal/CTRLTeam/app/build/intermediates/transforms/dexMerger/debug/1

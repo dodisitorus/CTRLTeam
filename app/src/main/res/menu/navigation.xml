@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_project"
+        android:icon="@drawable/project_color"
+        android:title="@string/project" />
+
+    <item
+        android:id="@+id/navigation_what_s_new"
+        android:icon="@drawable/whatsnew_color"
+        android:title="@string/what_s_new" />
+
+    <item
+        android:id="@+id/navigation_product"
+        android:icon="@drawable/product_color"
+        android:title="@string/contact" />
+
+</menu>

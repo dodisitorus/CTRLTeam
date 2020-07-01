@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.neovisionaries:nv-i18n:1.20@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.neovisionaries/nv-i18n/1.20/497b42900ada1de0f62996a80080053e7ba7e5ab/nv-i18n-1.20.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.neovisionaries/nv-i18n/1.20/f790f0b906cf663e49c5222e4b1b8074b42279f8/nv-i18n-1.20-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
